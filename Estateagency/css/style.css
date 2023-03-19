@@ -1,0 +1,1293 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+
+/*<!----------------------------- Header Start ----------------------------------->*/
+.header
+{
+	height: 100px;
+	width: 100%;
+	background: white;
+	display: flex;
+   position: sticky;
+	top: 0px;
+	text-align: center;
+	padding-top: 35px;
+	box-shadow: 0px 0px 10px 0px;
+	z-index: 1;
+}
+
+.header .logo, a
+{
+	text-decoration: none;
+	color: black;
+	height: 100px;
+	width: 35%;
+}
+.header .logo, span
+{
+	font-size: 35px;
+	color: #2eca6a;
+	font-weight: bold;
+}
+
+.header .menu .home,.about,.prop,.blog,.pages,.contact
+{
+	
+	height: 100px;
+	width: 55%;	
+	z-index: 0;
+	position: relative;
+	display: inline;
+	margin-right: 40px;
+	font-size: 23px;
+	font-weight: bold;
+
+}
+
+ .drop 
+{
+	display: inline-block;
+  height: 200px;
+  width: 200px;
+  background: white;
+  border-top: 10px solid #2eca6a;
+  box-shadow: 0px 0px 10px 0px;
+  list-style: none;
+  position: absolute;
+  top: 40px;
+  left: -50px;
+  font-size: 15px;
+     opacity: 0;
+     transition: 1s;
+}
+.drop li 
+{
+	list-style: none;
+	padding-top: 18px;
+	font-size: 20px;
+	color: black;
+	z-index: 0;
+	
+}
+.pages:hover .drop 
+{
+ opacity: 1;
+}
+.drop a:hover
+{
+	color: #2eca6a;;
+}
+
+.header .search
+{
+	height: 100px;
+	width: 10%;
+	
+}
+.header .search .fa-solid
+{
+	font-size: 20px;
+	color: white;
+	background: #2eca6a;
+	padding: 10px;
+
+}
+.home::after
+		{
+			
+			content: "";
+			position: absolute;
+			top: -65px;
+			left: -30px;
+			height: 5px;
+			width:100%;
+			background: #2eca6a;
+			z-index: -1;
+			margin-top: 90px;
+			transition: 0.8s;
+			opacity: 0;
+		}
+
+
+.about::after
+		{
+			
+			content: "";
+			position: absolute;
+			top: -65px;
+			left: -30px;
+			height: 5px;
+			width:100%;
+			background: #2eca6a;
+			z-index: -1;
+			margin-top: 90px;
+			transition: 0.8s;
+			opacity: 0;
+		}
+
+		.prop::after
+		{
+			
+			content: "";
+			position: absolute;
+			top: -65px;
+			left: -30px;
+			height:5px;
+			width:100%;
+			background: #2eca6a;
+			z-index: -1;
+			margin-top: 90px;
+			transition: 0.8s;
+			opacity: 0;
+		}
+
+		.blog::after
+		{
+			
+			content: "";
+			position: absolute;
+			top: -65px;
+			left: -30px;
+			height: 5px;
+			width:100%;
+			background: #2eca6a;
+			z-index: -1;
+			margin-top: 90px;
+			transition: 0.8s;
+			opacity: 0;
+		}
+
+		
+		.contact::after
+		{
+			
+			content: "";
+			position: absolute;
+			top: -65px;
+			left: -30px;
+			height: 5px;
+			width:100%;
+			background: #2eca6a;
+			z-index: -1;
+			margin-top: 90px;
+			transition: 0.8s;
+			opacity: 0;
+		}
+
+
+
+		.home:hover::after
+		{
+		 opacity:1 ;
+				 
+			left: 0px;
+		}
+
+		.about:hover::after
+		{
+		 opacity:1 ;
+				 
+			left: 0px;
+		}
+
+		.prop:hover::after
+		{
+		 opacity:1 ;
+				 
+			left: 0px;
+		}
+
+		.blog:hover::after
+		{
+		 opacity:1 ;
+				 
+			left: 0px;
+		}
+
+	
+		.contact:hover::after
+		{
+		 opacity:1 ;
+				 
+			left: 0px;
+		}
+		/*<!----------------------------- Header End ----------------------------------->*/
+
+
+/*		 <!----------------------------- Slider Start ----------------------------------->*/
+
+      
+       .slider
+       {
+       	height: 500px;
+       	width: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        object-fit: contain;
+        position: relative;
+
+       }
+       .slider .span1
+       {
+        position: absolute;
+        top: 60px;
+        left: 100px;
+       	font-size:30px ;
+       	color: white;
+       	font-weight: bold;
+
+       }
+       .slider .span2
+       {
+         position: absolute;
+        top: 150px;
+        left: 100px;
+        color: #2eca6a;
+       	font-size: 80px;
+       	font-weight: bold;
+       }
+       .slider .span3
+       {
+         position: absolute;
+        top: 150px;
+        left: 250px;
+        color: white;
+       	font-size: 80px;
+       	font-weight: bold;
+       }
+        .slider .span4
+       {
+         position: absolute;
+        top: 250px;
+        left: 100px;
+        color: white;
+       	font-size: 80px;
+       	font-weight: bold;
+       }
+        .slider .span5
+       {
+       	 height: 60px;
+       	 width: 200px;
+       	 border-radius: 50px;
+       	 border: 5px solid #2eca6a;
+       	 text-align: center;
+       	 line-height: 60px;
+         position: absolute;
+        top: 360px;
+        left: 100px;
+        
+       }
+       .slider .span5 a 
+       {
+       	color: white;
+       		 font-size: 20px;
+       }
+
+/*-------------------------------------------------slider end--------------------------------------------*/
+
+ .cont 
+ {
+ 	height: 150px;
+ 	width: 100%;
+ 	font-size: 40px;
+ 	font-weight: bold;
+ 	padding: 80px;
+ 	background: white;
+ }
+
+/*     <!----------------------------- nav Start----------------------------------->*/
+
+  .nav
+  {
+  	height: auto;
+  	width: 100%;
+  	background: white;
+  	display: flex;
+  	flex-wrap: wrap;
+
+  }
+
+ 
+  .nav .nav1,.nav2,.nav3 
+  {
+  
+  	height: 300px;
+  	margin: 40px;
+  	width: 25%;
+  	position: relative;
+  }
+  .nav .nav1 .ic1
+  {
+  	height: 100px;
+  	margin-top: 60px;
+  	width: 300px;
+  	border: 5px solid #2eca6a;
+  	font-size: 70px;
+  	padding: 10px;
+  	position: relative;
+  }
+  .nav .nav1 .ic1 p 
+  {
+  	position:absolute ;
+  	top: 25px;
+  	left: 100px;
+  	font-size: 45px;
+  	font-weight: bold;
+  }
+  .nav1 .navsp1
+  {
+  	position: absolute;
+  	top: 180px;
+  	left: 0px;
+  	font-size: 15px;
+  	color: black;
+  }
+
+   .nav1 .navsp1 .navanc
+   {
+   	color: gray;
+   }
+  .nav1 .navsp1 .navanc:hover
+   {
+   	color: #2eca6a;
+   }
+
+  .nav .nav2 .ic2
+  {
+  	height: 100px;
+  	margin-top: 60px;
+  	width: 250px;
+  	border: 5px solid #2eca6a;
+  	font-size: 70px;
+  	padding: 10px;
+  	position: relative;
+  }
+  .nav .nav2 .ic2 p 
+  {
+  	position:absolute ;
+  	top: 25px;
+  	left: 100px;
+  	font-size: 45px;
+  	font-weight: bold;
+  }
+  .nav2 .navsp2
+  {
+  	position: absolute;
+  	top: 180px;
+  	left: 0px;
+  	font-size: 15px;
+  	color: black;
+  }
+
+   .nav2 .navsp2 .navanc2
+   {
+   	color: gray;
+   }
+  .nav2 .navsp2 .navanc2:hover
+   {
+   	color: #2eca6a;
+   }
+
+
+  .nav .nav3 .ic3
+  {
+  	height: 100px;
+  	margin-top: 60px;
+  	width: 200px;
+  	border: 5px solid #2eca6a;
+  	font-size: 70px;
+  	padding: 10px;
+  	position: relative;
+  }
+  .nav .nav3 .ic3 p 
+  {
+  	position:absolute ;
+  	top: 25px;
+  	left: 100px;
+  	font-size: 45px;
+  	font-weight: bold;
+  }
+  .nav3 .navsp3
+  {
+  	position: absolute;
+  	top: 180px;
+  	left: 0px;
+  	font-size: 15px;
+  	color: black;
+  }
+
+   .nav3 .navsp3 .navanc3
+   {
+   	color: gray;
+   }
+  .nav3 .navsp3 .navanc3:hover
+   {
+   	color: #2eca6a;
+   }
+/*---------------------------------------Nav End-------------------------------------------*/
+
+
+  .latest
+  {
+  	height: auto;
+  
+  	background: transparent;
+  	display: flex;
+  	justify-content: space-between;
+				padding: 40px 50px;
+  	
+  }
+  .latest h3, a
+  {
+  	color: gray;
+  }
+ 
+
+  /*---------------------------------------Content Start-------------------------------------------*/
+
+
+  .content
+  {
+  	height: auto;
+  	width: 100%;
+
+  	display: flex;
+  	flex-wrap: wrap;
+  	padding: 35px;
+  }
+  .content .content1
+  {
+  	height: 500px;
+  	width: 30%;
+  	box-shadow: 0px 0px 2px 0px;
+  	 overflow: hidden;
+  	position: relative;
+  	margin-right: 25px;
+
+  	
+  	
+  }
+  .content .content1 img
+  {
+  	height: 100%;
+  	width: 100%;
+  	transform: scale(1.0);
+  	transition: 1s;
+
+  }
+  .content .content1 img:hover
+  {
+  	transform: scale(1.2);
+  	
+  }
+
+    .contdiv1
+    {
+    	 
+       height:400px ;
+       width: 200px;
+       position: absolute;
+       
+       top: 320px;
+       left: 0px;
+       padding-top: 50px;  
+       transition: 1s;
+
+      
+       
+    }
+  
+  .content .content1 .contdiv1  h1
+  { 
+  	color: white;
+  	
+  }
+  .content .content1 .contdiv1 div
+  {
+  	height: 30px;
+  	width: 150px;
+  	border: 5px solid #2eca6a ;
+  	border-radius: 30px;
+  	color: white;
+  	text-align: center;
+  	line-height: 20px;
+  	
+  	
+
+  }
+  .content .content1:hover .contdiv1 
+  {
+  	top: 210px;
+  }
+ .content .content1 .contdiv1 .cno2
+  {
+  	height: 50px;
+  	width: 420px;
+  	background: #2eca6a;
+  }
+  .cno2 li 
+  {
+  	display: inline;
+  	font-size: 20px;
+  	list-style: none;
+  	margin-right: 52px;
+  }
+  
+  
+
+.content .content2
+  {
+  	height: 500px;
+  	width: 30%;
+  box-shadow: 0px 0px 2px 0px;
+  	 overflow: hidden;
+  	position: relative;
+  	margin-right: 25px;
+  	
+  	
+  }
+  .content .content2 img
+  {
+  	height: 100%;
+  	width: 100%;
+  	transform: scale(1.0);
+  
+  	transition: 1s;
+  }
+  .content .content2 img:hover
+  {
+  	transform: scale(1.2);
+  	
+  }
+
+    .contdiv2
+    {
+    	 
+       height:400px ;
+       width: 200px;
+       position: absolute;
+       
+       top: 320px;
+       left: 0px;
+       padding-top: 50px;  
+       transition: 1s;
+
+      
+       
+    }
+  
+  .content .content2 .contdiv2  h1
+  { 
+  	color: white;
+  	
+  }
+  .content .content2 .contdiv2 div
+  {
+  	height: 30px;
+  	width: 150px;
+  	border: 5px solid #2eca6a ;
+  	border-radius: 30px;
+  	color: white;
+  	text-align: center;
+  	line-height: 20px;
+  	
+  	
+
+  }
+  .content .content2:hover .contdiv2 
+  {
+  	top: 210px;
+  }
+ .content .content2 .contdiv2 .cno3
+  {
+  	height: 50px;
+  	width: 420px;
+  	background: #2eca6a;
+  }
+  .cno3 li 
+  {
+  	display: inline;
+  	font-size: 20px;
+  	list-style: none;
+  	margin-right: 52px;
+  }
+  
+
+
+  .content .content3
+  {
+  	height: 500px;
+  	width: 33%;
+  	box-shadow: 0px 0px 2px 0px;
+  	 overflow: hidden;
+  	position: relative;
+  	
+  	
+  	
+  }
+  .content .content3 img
+  {
+  	height: 100%;
+  	width: 100%;
+  	transform: scale(1.0);
+  
+  	transition: 1s;
+  }
+  .content .content3 img:hover
+  {
+  	transform: scale(1.2);
+  	
+  }
+
+    .contdiv3
+    {
+    	 
+       height:auto ;
+       width: 200px;
+       position: absolute;
+       
+       top: 320px;
+       left: 0px;
+       padding-top: 50px;  
+       transition: 1s;
+
+      
+       
+    }
+  
+  .content .content3 .contdiv3  h1
+  { 
+  	color: white;
+  	
+  }
+  .content .content3 .contdiv3 div
+  {
+  	height: 30px;
+  	width: 150px;
+  	border: 5px solid #2eca6a ;
+  	border-radius: 30px;
+  	color: white;
+  	text-align: center;
+  	line-height: 20px;
+  	
+  	
+
+  }
+  .content .content3:hover .contdiv3 
+  {
+  	top: 210px;
+  }
+ .content .content3 .contdiv3 .cno4
+  {
+  	height: 50px;
+  	width: 420px;
+  	background: #2eca6a;
+  }
+  .cno4 li 
+  {
+  	display: inline;
+  	font-size: 20px;
+  	list-style: none;
+  	margin-right: 51px;
+  }
+  
+    /*---------------------------------------Content End-------------------------------------------*/
+
+
+  .best
+  {
+  	height: auto;
+  
+  	background: transparent;
+  	display: flex;
+  	justify-content: space-between;
+				padding: 40px 50px;
+
+  	
+  }
+  .best h1
+  {
+  	font-size: 40px;
+
+  }
+  .best h3, a
+  {
+  	color: gray;
+  }
+ 
+
+              /*--------------------------------------Agents Start--------------------------------*/
+
+
+
+              .agent
+              {
+              	height: auto;
+              	width: 100%;
+              	background:transparent;
+              	padding: 35px;
+              	display: flex;
+              	flex-wrap: wrap;
+
+              }
+              .agent .agent1
+              {
+              	height: 400px;
+              	width: 33.33%;
+              	overflow: hidden;
+              	position: relative;
+              	margin-right: 20px;
+
+              }
+              .agent .agent1 img 
+              {
+              	height: 100%;
+              	width: 100%;
+              }
+              .agent1 .agentdiv1
+              {
+              	padding: 30px;
+              	height: 400px;
+              	width: 100%;
+              	background: rgba(10, 150, 0, 0.6);
+              	position: absolute;
+              	top: 400px;
+              	left: 0px;
+              	transition: 0.4s;
+              }
+              .agent1:hover .agentdiv1
+              {
+              	top: 0px;
+              }
+              .agentsp1
+              {
+              	font-size: 40px;
+              	color: black;
+              }
+              .agenth3
+              {
+              	color: white;
+              }
+              .agenth2
+              {
+              	color: black;
+              }
+              .agentdiv1 i 
+              {
+              	margin:60px 30px;
+              	
+              }
+
+
+
+
+
+               .agent .agent2
+              {
+              	height: 400px;
+              	width: 30%;
+              	overflow: hidden;
+              	position: relative;
+              	margin-right: 20px;
+
+              }
+              .agent .agent2 img 
+              {
+              	height: 100%;
+              	width: 100%;
+              }
+              .agent2 .agentdiv2
+              {
+              	padding: 30px;
+              	height: 400px;
+              	width: 100%;
+              	background: rgba(10, 150, 0, 0.6);
+              	position: absolute;
+              	top: 400px;
+              	left: 0px;
+              	transition: 0.4s;
+              }
+              .agent2:hover .agentdiv2
+              {
+              	top: 0px;
+              }
+              .agentsp2
+              {
+              	font-size: 40px;
+              	color: black;
+              }
+              .agenth5
+              {
+              	color: white;
+              }
+              .agenth4
+              {
+              	color: black;
+              }
+              .agentdiv2 i 
+              {
+              	margin:60px 30px;
+              	
+              }
+
+
+
+
+                .agent .agent3
+              {
+              	height: 400px;
+              	width: 33%;
+              	overflow: hidden;
+              	position: relative;
+              	
+
+              }
+              .agent .agent3 img 
+              {
+              	height: 100%;
+              	width: 100%;
+              }
+              .agent3 .agentdiv3
+              {
+              	padding: 30px;
+              	height: 400px;
+              	width: 100%;
+              	background: rgba(10, 150, 0, 0.6);
+              	position: absolute;
+              	top: 400px;
+              	left: 0px;
+              	transition: 0.4s;
+              }
+              .agent3:hover .agentdiv3
+              {
+              	top: 0px;
+              }
+              .agentsp3
+              {
+              	font-size: 40px;
+              	color: black;
+              }
+              .agenth6
+              {
+              	color: white;
+              }
+              .agenth7
+              {
+              	color: black;
+              }
+              .agentdiv3 i 
+              {
+              	margin:60px 30px;
+              	
+              }
+
+               /*-------------------------------------Agent end------------------------------------*/
+
+
+
+  .New
+  {
+  	height: auto;
+  
+  	background: transparent;
+  	display: flex;
+  	justify-content: space-between;
+				padding: 40px 50px;
+  	
+  }
+  .New h1 
+  {
+  	font-size: 40px;
+
+  }
+  .New h3, a
+  {
+  	color: gray;
+  }
+
+
+
+/*   <!-------------------------------- projects start --------------------------->*/
+
+
+      .project
+      {
+      	height: auto;
+      	width: 100%;
+      	background: transparent;
+      	padding: 20px;
+      	display: flex;
+      	flex-wrap: wrap;
+
+      }
+      .project .project1
+      {
+      	height: 400px;
+      	width: 30%;
+      	overflow: hidden;
+      	position: relative;
+      	margin-right: 30px;
+      }
+      .project .project1 img
+      {
+
+      	height: 100%;
+      	width: 100%;
+      	transform: scale(1.0);
+      	transition: 1s;
+      }
+      .project .project1 img:hover
+      {
+      	transform: scale(1.2);
+      }
+
+       .project1 .prjdiv1
+       {
+       	height: 35px;
+       	width: 100px;
+       	background-color:#2eca6a ;
+       	border-radius: 30px;
+       	position: absolute;
+       	top: 200px;
+       	left: 30px;
+       	line-height: 35px;
+       	text-align: center;
+       	font-size: 20px;
+     
+       } 
+       .project1 .prjsp1
+       {
+       	font-size: 35px;
+       	font-weight: bold;
+       	position: absolute;
+       	top: 250px;
+       	left: 30px;
+       	color: white;
+       
+       }
+       .project1 .prjh1
+       {
+       	position: absolute;
+       	top: 350px;
+       	left: 30px;
+       	color: lightblue;
+       }
+
+
+
+
+         .project .project2
+      {
+      	height: 400px;
+      	width: 33%;
+      	overflow: hidden;
+      	position: relative;
+      	margin-right: 30px;
+      }
+      .project .project2 img
+      {
+      	
+      	height: 100%;
+      	width: 100%;
+      	transform: scale(1.0);
+      	transition: 1s;
+      }
+      .project .project2 img:hover
+      {
+      	transform: scale(1.2);
+      }
+        
+       .project2 .prjdiv2
+       {
+       	height: 35px;
+       	width: 100px;
+       	background-color:#2eca6a ;
+       	border-radius: 30px;
+       	position: absolute;
+       	top: 200px;
+       	left: 30px;
+       	line-height: 35px;
+       	text-align: center;
+       	font-size: 20px;
+     
+       } 
+       .project2 .prjsp2
+       {
+       	font-size: 35px;
+       	font-weight: bold;
+       	position: absolute;
+       	top: 250px;
+       	left: 30px;
+       	color: white;
+       
+       }
+       .project2 .prjh2
+       {
+       	position: absolute;
+       	top: 350px;
+       	left: 30px;
+       	color: lightblue;
+       }
+
+
+         .project .project3
+      {
+      	height: 400px;
+      	width: 30%;
+      	overflow: hidden;
+      	position: relative;
+      }
+      .project .project3 img
+      {
+      	
+      	height: 100%;
+      	width: 100%;
+      	transform: scale(1.0);
+      	transition: 1s;
+      }
+      .project .project3 img:hover
+      {
+      	transform: scale(1.2);
+      }
+        
+       .project3 .prjdiv3
+       {
+       	height: 35px;
+       	width: 100px;
+       	background-color:#2eca6a ;
+       	border-radius: 30px;
+       	position: absolute;
+       	top: 200px;
+       	left: 30px;
+       	line-height: 35px;
+       	text-align: center;
+       	font-size: 20px;
+     
+       } 
+       .project3 .prjsp3
+       {
+       	font-size: 35px;
+       	font-weight: bold;
+       	position: absolute;
+       	top: 250px;
+       	left: 30px;
+       	color: white;
+       
+       }
+       .project3 .prjh3
+       {
+       	position: absolute;
+       	top: 350px;
+       	left: 30px;
+       color: lightblue;
+       }
+       /*   <!-------------------------------- projects eND --------------------------->*/
+           
+            .test
+  {
+  	height: auto;
+  
+  	background: transparent;
+				padding: 40px 50px;
+  	
+  }
+  .test h1 
+  {
+  	font-size: 50px;
+
+  }
+
+              /*---------------------------Testimonials Start-----------------------------*/
+
+              .Testimonials
+              {
+              	height: auto;
+              	background: transparent;
+              	padding: 50px;
+              	display: flex;
+              	flex-wrap: wrap;
+              }
+              .Testimonials .testimg1
+              {
+              	height: auto;
+              	width: 50%;
+                            }
+              .Testimonials .testimg1 img
+              {
+              	height: 100%;
+              	width: 100%;
+              }
+              .Testimonials .test2
+              {
+              	height: auto;
+              	width: 50%;
+              	position: relative;
+              	
+              }
+              .Testimonials .test2 i 
+              {
+              	color:#2eca6a ;
+              	font-size: 40px;
+              	margin-left:240px;
+              	margin-top: 50px;
+              }
+              .Testimonials .test2 .testdiv1
+              {
+              	height: 100px;
+              	width: 400px;
+              	background: lightgray;
+              	box-shadow: 0x 0px 10px 0px;
+              	margin-left: 70px;
+              	margin-top: 30px;
+              	font-size: 15px;
+              	padding: 25px;
+
+              }
+              .Testimonials .test2  .testmini
+              {
+              	height: 100px;
+              	width: 100px;
+              	border-radius: 50%;
+              	margin-left: 70px;
+              	margin-top: 20px;
+              	text-align: center;
+              	line-height: 100px;
+              	overflow: hidden;
+              }
+              .Testimonials .test2  .testmini img
+              {
+              	height: 100%;
+              	width: 100%;
+              	
+              }
+               .Testimonials .test2 .testsp1
+               {
+               	color: black;
+               	font-size: 20px;
+               	font-weight: bold;
+            
+               	position: absolute;
+               	top: 280px;
+               	left: 200px;
+               }
+
+
+                /*---------------------------Testimonials End-----------------------------*/
+
+
+
+/*                 <!------------------------ Footer start ------------------------>*/
+
+
+                  .footer
+                  {
+                  	height: auto;
+                  	width: 100%;
+                  	background: lightgray;
+                  	display: flex;
+                  	flex-wrap:wrap ;
+                  }
+                  .footer .footer1
+                  {
+                  	height: 400px;
+                  	width: 30%;
+                 
+                  	padding: 50px;
+                  }
+                  .footer .footer1 .fh2 
+                  {
+                  	font-size: 40px;
+                  }
+                  .footer .footer1 .foosp1 
+                  {
+                  	font-size: 20px;
+                  	color: gray;
+                  }
+                  .footer .footer1 h2 a 
+                  {
+                  	font-size: 20px;
+                  	color: black;
+                  }
+                   .footer .footer2
+                  {
+                  	height: 400px;
+                  	width: 30%;
+                 
+                  	padding: 50px;
+                  }
+                  .footer .footer2 .fh2 
+                  {
+                  	font-size: 40px;
+
+                  }
+                   .footer .footer2 a 
+                   {
+                   	font-size: 20px;
+                   	color: black;
+                   }
+                   .footer .footer2 a:hover
+                   {
+                   	color:#2eca6a ;
+                   }
+
+
+                    .footer .footer3
+                  {
+                  	height: 400px;
+                  	width: 33.33%;
+            
+                  	padding: 36px;
+                  }
+                  .footer .footer3 .fh2 
+                  {
+                  	font-size: 40px;
+
+                  }
+                   .footer .footer3 a 
+                   {
+                   	font-size: 20px;
+                   	color: black;
+                   }
+                   .footer .footer3 a:hover
+                   {
+                   	color:#2eca6a ;
+                   }
+
+
+                           /*----------------------- footer end-------------------*/
+
+                           .secondfooter
+                           {
+
+                           	height: 150px;
+                           	width: 100%;
+                           	background: lightgray;
+                           	text-align: center;
+                           	line-height: 90px;
+                           }
+                           .secondfooter li 
+                           {
+                           	display: inline;
+                           	margin-right: 20px;
+                           }
+                           .secondfooter li a
+                           {
+                           	color: black;
+                           }
+                            .secondfooter li a:hover
+                            {
+                            	color: #2eca6a;
+                            }
+                            
+
+
+
+
+
+
+
+
+
+
+
+
