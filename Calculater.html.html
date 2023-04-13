@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;margin: 0px;padding: 0px;}
+    .main
+    {
+        height: 500px;
+        width: 100%;
+        background: lightseagreen;
+       position: relative;
+    }
+    .main .calci
+    {
+        height: 420px;
+        width: 350px;
+        background-color: aqua;
+        position: absolute;
+        top: 50px;
+        left: 450px;
+        padding: 20px;
+    }
+    .main .calci #inp
+    {
+        height: 60px;
+        width: 100%;
+        margin-top: 10px;
+        border: 2px solid gray;
+        box-shadow: 2px 2px 10px gray;
+    }
+    .main .calci button
+    {
+        padding: 25px;
+        margin: 5px;
+        font-size: 15px;
+        
+       
+    }
+      .c
+    {
+       background-color: rgb(238, 238, 74);
+    }
+    .d
+    {
+        background-color: pink;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="calci">
+             <input type="text" value="" id="inp">
+             <button id="b" onclick="add(1)">1</button>
+             <button id="b" onclick="add(2)">2</button>
+             <button id="b" onclick="add(3)">3</button>
+             <button class="c" id="b" onclick="add('+')">+</button>
+             <br>
+             <button id="b" onclick="add(4)">4</button>
+             <button id="b" onclick="add(5)">5</button>
+             <button id="b" onclick="add(6)">6</button>
+             <button id="b" class="c" onclick="add('-')">-</button>
+             <br>
+             <button id="b"onclick="add(7)" >7</button>
+             <button id="b"onclick="add(8)">8</button>
+             <button id="b"onclick="add(9)">9</button>
+             <button id="b" class="c"onclick="add('*')">*</button>
+             <br>
+             <button id="b" class="d"onclick="cls()">C</button>
+             <button id="b"onclick="add(0)">0</button>
+             <button id="b"onclick="exe()">=</button>
+             <button id="b" class="c"onclick="add('/')">/</button>
+        </div>
+
+    </div>
+    
+
+
+    <script>
+
+           inp_tag= document.getElementById('inp');
+          
+           
+
+     function add(v)
+     {
+        
+        inp_tag.value+=v;
+        
+     }
+     function cls()
+     {
+        inp_tag.value="";
+     }
+     function exe()
+     {
+       inp_tag.value=eval(inp_tag.value);
+}
+    
+    </script>
+</body>
+</html>
